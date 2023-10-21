@@ -1,0 +1,16 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.boton{
+    @include m.boton(v.$azul, v.$blanco);  // mixin de boton
+    border-radius: .5rem;
+}
+
+.boton-eliminar{
+    @include m.boton(v.$rojo, v.$blanco); // mixin de botón rojo
+}
+
+.boton-modificar{
+    @include m.boton(v.$amarillo, v.$blanco);  // mixin de boton
+    border-radius: .5rem;
+}
